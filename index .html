@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio of Harigaran A — 12+ years in enterprise IT infrastructure, Windows Server, Azure, VMware and cloud operations.">
+<title>Harigaran A | Infrastructure, Azure & Cloud Operations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#07111f;--bg2:#0b1728;--panel:rgba(17,32,52,.78);--panel2:#101f33;
+ --ink:#edf5ff;--muted:#a7b8cc;--line:rgba(160,190,225,.17);
+ --cyan:#65e4e7;--blue:#7c9dff;--purple:#b29aff;--green:#78edbd;
+ --head:"Space Grotesk",sans-serif;--body:"DM Sans",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{font-family:var(--body);background:radial-gradient(ellipse at 15% 0%,rgba(45,93,164,.22),transparent 35%),radial-gradient(ellipse at 90% 25%,rgba(90,55,164,.16),transparent 30%),var(--bg);color:var(--ink);line-height:1.65;font-size:16px}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.brand{font-family:var(--head);font-weight:700;font-size:20px;letter-spacing:-.04em;display:flex;align-items:center;gap:10px}
+.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),var(--blue));color:#07111f;font-weight:700}
+nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+nav a{font-size:13px;color:var(--muted);font-weight:600;transition:color .2s}
+nav a:hover{color:var(--cyan)}
+.menu-btn{display:none;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:8px 12px;border-radius:10px}
+.hero{padding:82px 0 66px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:42px;min-height:600px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(101,228,231,.25);background:rgba(101,228,231,.07);color:var(--cyan);padding:7px 13px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.04em}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(120,237,189,.12)}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.04em;line-height:1.15}
+h1{font-size:clamp(42px,6.5vw,76px);margin:22px 0 18px;max-width:780px}
+.gradient{background:linear-gradient(100deg,var(--cyan),#a6c0ff 55%,var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:18px;font-weight:700;margin-bottom:14px}
+.lead{color:var(--muted);font-size:17px;max-width:650px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:12px 18px;font-weight:700;font-size:14px;border:1px solid var(--line);transition:transform .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--cyan)}
+.btn.primary{color:#07111f;background:linear-gradient(110deg,var(--cyan),#a3c1ff);border:0}
+.btn.secondary{background:rgba(255,255,255,.03)}
+.hero-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.hero-tags span,.tag{font-size:12px;border:1px solid var(--line);color:#c4d4e7;background:rgba(255,255,255,.035);border-radius:8px;padding:5px 10px}
+.hero-visual{position:relative;min-height:410px;display:grid;place-items:center}
+.orbit{position:absolute;border:1px solid rgba(124,157,255,.22);border-radius:50%;width:330px;height:330px;animation:spin 30s linear infinite}
+.orbit.two{width:255px;height:255px;border-style:dashed;animation-direction:reverse;animation-duration:22s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.profile-card{position:relative;z-index:2;width:min(330px,100%);padding:26px;border:1px solid rgba(150,190,235,.24);border-radius:25px;background:linear-gradient(145deg,rgba(23,44,70,.96),rgba(12,25,42,.92));box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.avatar{width:72px;height:72px;border-radius:22px;display:grid;place-items:center;font-family:var(--head);font-size:28px;font-weight:700;color:#07111f;background:linear-gradient(135deg,var(--cyan),var(--blue));margin-bottom:18px}
+.profile-card h3{font-size:24px;margin-bottom:5px}
+.profile-card p{font-size:13px;color:var(--muted)}
+.mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.mini-stat{padding:12px;border-radius:13px;background:rgba(255,255,255,.045);border:1px solid var(--line)}
+.mini-stat b{display:block;font-family:var(--head);font-size:22px;color:var(--cyan)}
+.mini-stat span{font-size:11px;color:var(--muted)}
+.float-chip{position:absolute;z-index:3;padding:10px 13px;border-radius:12px;background:#12253a;border:1px solid var(--line);box-shadow:0 12px 30px #0003;font-size:12px;font-weight:700}
+.chip-a{top:35px;right:0}.chip-b{bottom:42px;left:0}.chip-c{bottom:5px;right:10px}
+section{padding:82px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}
+.kicker{color:var(--cyan);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;margin-bottom:8px}
+h2{font-size:clamp(30px,4vw,44px);margin-bottom:10px}
+.section-head p,.sub{color:var(--muted);max-width:650px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.stat,.card,.experience-card,.project-card,.timeline-card,.contact-panel{background:linear-gradient(145deg,rgba(19,36,58,.85),rgba(11,24,40,.85));border:1px solid var(--line);border-radius:18px;padding:22px}
+.stat b{font-family:var(--head);font-size:32px;display:block;color:var(--cyan);letter-spacing:-.05em}
+.stat span{font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{transition:transform .22s,border-color .22s}
+.card:hover,.project-card:hover{transform:translateY(-4px);border-color:rgba(101,228,231,.42)}
+.card-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;background:rgba(101,228,231,.09);border:1px solid rgba(101,228,231,.18);font-size:21px;margin-bottom:16px}
+h3{font-size:19px;margin-bottom:10px}
+.card p,.project-card p,.experience-card p{font-size:14px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.tag{font-size:11px;padding:4px 8px}
+.timeline{position:relative;display:grid;gap:18px;margin-left:9px;padding-left:27px;border-left:1px solid rgba(101,228,231,.35)}
+.experience-card{position:relative}
+.experience-card:before{content:"";position:absolute;left:-35px;top:28px;width:14px;height:14px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 6px rgba(101,228,231,.12)}
+.job-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:12px}
+.job-top h3{margin-bottom:4px}
+.company{color:var(--cyan);font-weight:600;font-size:13px}
+.date{color:var(--muted);font-size:12px;border:1px solid var(--line);border-radius:8px;padding:5px 9px;height:max-content}
+ul.clean{padding-left:19px;color:#d1ddec;font-size:14px}
+ul.clean li{margin:7px 0}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.project-card{transition:transform .2s,border-color .2s}
+.project-label{font-size:11px;color:var(--cyan);font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+.project-card h3{font-size:23px;margin:10px 0}
+.flow{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:18px 0}
+.flow span{background:rgba(101,228,231,.08);border:1px solid rgba(101,228,231,.2);border-radius:8px;padding:7px 9px;font-size:11px;color:#c9f7f4;font-weight:700}
+.flow i{font-style:normal;color:var(--muted)}
+.architecture{margin-top:20px;padding:22px;border-radius:18px;background:rgba(7,17,31,.7);border:1px solid var(--line)}
+.architecture h3{margin-bottom:6px}
+.architecture p{font-size:13px;color:var(--muted)}
+.arch-nodes{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}
+.arch-node{padding:14px 8px;border:1px solid var(--line);border-radius:12px;text-align:center;background:rgba(255,255,255,.025);cursor:pointer;transition:.2s}
+.arch-node:hover,.arch-node.active{border-color:var(--cyan);background:rgba(101,228,231,.1);transform:translateY(-2px)}
+.arch-node .emoji{font-size:22px;display:block;margin-bottom:7px}
+.arch-node b{font-size:11px;display:block}
+.arch-detail{min-height:54px;margin-top:16px;padding:12px 14px;border-radius:10px;background:rgba(124,157,255,.08);color:#cbd9ed;font-size:13px}
+.journey{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.journey .card{position:relative;overflow:hidden}
+.step{font-family:var(--head);font-size:34px;color:rgba(101,228,231,.55);margin-bottom:12px}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}
+.contact-list{display:grid;gap:13px;margin-top:20px}
+.contact-item{display:flex;gap:12px;align-items:center;color:#dce8f6;overflow-wrap:anywhere}
+.contact-item span:first-child{width:36px;height:36px;flex-shrink:0;border-radius:10px;background:rgba(101,228,231,.08);display:grid;place-items:center}
+.contact-panel form{display:grid;gap:12px}
+label{font-size:12px;color:var(--muted);font-weight:700}
+input,select,textarea{width:100%;margin-top:5px;padding:12px 13px;border-radius:10px;border:1px solid var(--line);background:#091525;color:var(--ink);font:inherit}
+textarea{min-height:115px;resize:vertical}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:12px}
+.footer-inner{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:60px}.hero-visual{min-height:370px}.grid{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.journey{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.wrap{width:min(100% - 28px,1120px)}.nav{min-height:66px}.menu-btn{display:block}nav{display:none;position:absolute;top:66px;left:0;right:0;padding:18px;background:#091525;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}nav.open{display:flex}.hero{padding:48px 0 45px;gap:20px}.hero-visual{min-height:340px}.orbit{width:275px;height:275px}.orbit.two{width:215px;height:215px}.float-chip{font-size:10px}.section-head{display:block}.stats,.grid,.projects,.journey{grid-template-columns:1fr}.arch-nodes{grid-template-columns:repeat(2,1fr)}section{padding:60px 0}.stat{padding:17px}.stat b{font-size:28px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><span class="brand-mark">HA</span> Harigaran A</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰ Menu</button>
+  <nav id="navLinks" aria-label="Main navigation">
+   <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+  </nav>
+ </div>
+</header>
+<main id="home">
+ <div class="wrap hero">
+  <div>
+   <div class="eyebrow"><span class="pulse"></span> OPEN TO INFRASTRUCTURE & CLOUD OPPORTUNITIES</div>
+   <h1>Keeping enterprise infrastructure <span class="gradient">secure, stable & scalable.</span></h1>
+   <p class="role">Senior Operations Technical Specialist · Windows Server · Azure · VMware</p>
+   <p class="lead">12+ years in IT infrastructure management, supporting enterprise Windows and hybrid cloud environments, improving service reliability, and coordinating incident, change, migration, and SLA-driven operations.</p>
+   <div class="actions">
+    <a class="btn primary" href="#contact">✉ Get in touch</a>
+    <a class="btn secondary" href="Harigaran_A_Resume_Wintel_Updated.pdf" download="Harigaran_A_Resume_Wintel_Updated.pdf">↓ Download resume</a>
+    <a class="btn secondary" href="#projects">Explore projects ↗</a>
+   </div>
+   <div class="hero-tags"><span>Windows Server</span><span>Microsoft Azure</span><span>VMware</span><span>Enterprise Operations</span></div>
+  </div>
+  <div class="hero-visual" aria-label="Professional profile summary">
+   <div class="orbit"></div><div class="orbit two"></div>
+   <div class="float-chip chip-a">☁ Azure & Hybrid Cloud</div>
+   <div class="float-chip chip-b">🛡 SLA & Security Focus</div>
+   <div class="float-chip chip-c">⚙ L2 / L3 Operations</div>
+   <div class="profile-card">
+    <div class="avatar">HA</div><h3>Harigaran A</h3>
+    <p>Infrastructure Operations · Cloud Administration</p>
+    <div class="mini-stats"><div class="mini-stat"><b>12+</b><span>Years in IT</span></div><div class="mini-stat"><b>1,000+</b><span>Hybrid servers supported</span></div><div class="mini-stat"><b>L2/L3</b><span>Incident resolution</span></div><div class="mini-stat"><b>24×7</b><span>Operations mindset</span></div></div>
+   </div>
+  </div>
+ </div>
+
+ <section id="about"><div class="wrap reveal">
+  <div class="section-head"><div><div class="kicker">Professional overview</div><h2>About me</h2></div><p>Enterprise infrastructure experience with a focus on uptime, secure operations, and practical problem-solving.</p></div>
+  <p class="sub">I work across Windows Server administration, Active Directory, Microsoft Azure, VMware virtualization, migrations, and day-to-day infrastructure operations. I collaborate with technical teams and stakeholders to resolve incidents, implement approved changes, maintain service availability, and improve operational processes.</p>
+  <div class="stats">
+   <div class="stat"><b>12+ yrs</b><span>IT infrastructure management</span></div>
+   <div class="stat"><b>1,000+</b><span>Hybrid Windows and Azure servers supported</span></div>
+   <div class="stat"><b>2019/2022</b><span>Windows Server migration experience</span></div>
+   <div class="stat"><b>L2 / L3</b><span>Operations, incidents and escalations</span></div>
+  </div>
+ </div></section>
+
+ <section id="experience"><div class="wrap reveal">
+  <div class="section-head"><div><div class="kicker">Career history</div><h2>Experience highlights</h2></div><p>Enterprise operations, infrastructure modernization, and technical coordination.</p></div>
+  <div class="timeline">
+   <article class="experience-card">
+    <div class="job-top"><div><h3>Senior Operations Technical Specialist</h3><div class="company">Fujitsu Consulting India Pvt. Ltd.</div></div><span class="date">Jun 2023 – Present</span></div>
+    <ul class="clean"><li>Manage and support 1,000+ hybrid Windows Server and Azure environments, focusing on availability and operational stability.</li><li>Coordinate infrastructure incidents, change implementation, patching activities, and SLA compliance with the operations team.</li><li>Support Azure VMs, identity services, Windows Server administration, and infrastructure troubleshooting.</li><li>Contribute to Windows Server migrations, modernization activities, and operational process improvements.</li><li>Coordinate with cross-functional and client teams on escalations, status updates, and service reviews.</li></ul>
+    <div class="tags"><span class="tag">Windows Server</span><span class="tag">Azure</span><span class="tag">Incident Management</span><span class="tag">Change Management</span><span class="tag">SLA</span></div>
+   </article>
+   <article class="experience-card">
+    <div class="job-top"><div><h3>Wintel Administrator</h3><div class="company">IDC Technologies · Client: TCS</div></div><span class="date">Jan 2022 – May 2023</span></div>
+    <ul class="clean"><li>Supported large-scale physical and virtual Windows Server environments, including Windows Server 2008 R2 through 2019.</li><li>Handled L2/L3 incidents, root cause analysis, VMware operations, and disaster recovery testing.</li><li>Supported OS migration activities and maintained service levels across production infrastructure.</li></ul>
+    <div class="tags"><span class="tag">Wintel</span><span class="tag">VMware</span><span class="tag">RCA</span><span class="tag">DR Testing</span></div>
+   </article>
+   <article class="experience-card">
+    <div class="job-top"><div><h3>Server Administrator & Team Lead</h3><div class="company">Precision Informatics · Client: TVS Credit</div></div><span class="date">Aug 2017 – Dec 2021</span></div>
+    <ul class="clean"><li>Led infrastructure support across server, network, and helpdesk operations, coordinating a team of engineers.</li><li>Supported Exchange-to-Office 365 migration and Windows Server modernization projects.</li><li>Participated in endpoint security initiatives, including DLP, encryption, antivirus, and FortiNAC rollout support.</li><li>Supported MPLS/WAN connectivity and IT assets across multiple sites.</li></ul>
+    <div class="tags"><span class="tag">Team Leadership</span><span class="tag">Microsoft 365</span><span class="tag">Endpoint Security</span><span class="tag">WAN</span></div>
+   </article>
+   <article class="experience-card">
+    <div class="job-top"><div><h3>System Engineer</h3><div class="company">Ensure Support & Service · Client: Mando Automotive</div></div><span class="date">Mar 2017 – Oct 2017</span></div>
+    <ul class="clean"><li>Supported IT infrastructure setup across two plants and implemented Active Directory on Windows Server 2012 R2.</li></ul>
+   </article>
+   <article class="experience-card">
+    <div class="job-top"><div><h3>System Engineer</h3><div class="company">Donghoow Surfacetech India</div></div><span class="date">Aug 2014 – Jul 2016</span></div>
+    <ul class="clean"><li>Handled end-user support, IT vendor coordination, and technical escalations.</li></ul>
+   </article>
+  </div>
+ </div></section>
+
+ <section id="skills"><div class="wrap reveal">
+  <div class="section-head"><div><div class="kicker">Technical competencies</div><h2>Skills & technology matrix</h2></div><p>Core enterprise infrastructure skills alongside cloud, identity, security, and service management.</p></div>
+  <div class="grid">
+   <article class="card"><div class="card-icon">☁</div><h3>Microsoft Azure</h3><p>Administration and operational support for hybrid cloud infrastructure and Azure services.</p><div class="tags"><span class="tag">Azure VMs</span><span class="tag">Azure Backup</span><span class="tag">Azure Migrations</span><span class="tag">RBAC</span><span class="tag">Entra ID</span><span class="tag">Azure Networking</span></div></article>
+   <article class="card"><div class="card-icon">▣</div><h3>Windows Server</h3><p>Server administration, maintenance, migration, core services, and production troubleshooting.</p><div class="tags"><span class="tag">Server 2016–2022</span><span class="tag">AD DS</span><span class="tag">GPO</span><span class="tag">DNS</span><span class="tag">DHCP</span><span class="tag">WSUS</span><span class="tag">Failover Clustering</span><span class="tag">IIS</span></div></article>
+   <article class="card"><div class="card-icon">◈</div><h3>Virtualization</h3><p>Virtual infrastructure administration, VM lifecycle operations, migrations, and performance management.</p><div class="tags"><span class="tag">VMware vSphere</span><span class="tag">vCenter</span><span class="tag">vMotion</span><span class="tag">P2V</span><span class="tag">Hyper-V</span><span class="tag">Capacity Planning</span></div></article>
+   <article class="card"><div class="card-icon">✉</div><h3>Microsoft 365 & identity</h3><p>Cloud identity and collaboration services, plus email security and endpoint management exposure.</p><div class="tags"><span class="tag">Exchange Online</span><span class="tag">Teams</span><span class="tag">SharePoint</span><span class="tag">OneDrive</span><span class="tag">Conditional Access</span><span class="tag">Intune / MDM</span></div></article>
+   <article class="card"><div class="card-icon">⌁</div><h3>Security & networking</h3><p>Infrastructure security operations, access control, connectivity, and endpoint protection.</p><div class="tags"><span class="tag">Defender for Office 365</span><span class="tag">Symantec Email Gateway</span><span class="tag">FortiNAC</span><span class="tag">SonicWall VPN</span><span class="tag">FortiGate</span><span class="tag">VLAN / WAN</span></div></article>
+   <article class="card"><div class="card-icon">▤</div><h3>AWS & operations</h3><p>Cloud learning and project work, paired with incident, change, and service delivery practices.</p><div class="tags"><span class="tag">EC2</span><span class="tag">VPC</span><span class="tag">S3</span><span class="tag">IAM</span><span class="tag">Lambda</span><span class="tag">DynamoDB</span><span class="tag">CloudWatch</span><span class="tag">RCA</span><span class="tag">ITIL</span></div></article>
+  </div>
+ </div></section>
+
+ <section id="projects"><div class="wrap reveal">
+  <div class="section-head"><div><div class="kicker">Cloud architecture showcase</div><h2>AWS project work</h2></div><p>Project examples from AWS training and hands-on cloud learning. Select a service in the architecture to see its role.</p></div>
+  <div class="projects">
+   <article class="project-card"><div class="project-label">Project 01 · Serverless workflow</div><h3>Institution registration app</h3><p>A course registration form designed to collect course title, name, phone number, and email, with server-side validation.</p><div class="flow"><span>S3 Website</span><i>→</i><span>API Gateway</span><i>→</i><span>Lambda</span><i>→</i><span>DynamoDB</span></div><ul class="clean"><li>Used CloudWatch logs to troubleshoot application and integration issues.</li><li>Worked through CORS, routing, and S3 access configuration.</li></ul></article>
+   <article class="project-card"><div class="project-label">Project 02 · Event-driven architecture</div><h3>Gaming leaderboard & analytics</h3><p>A sample pipeline for ranking player scores, archiving events, and sending notifications for new Top 10 entries.</p><div class="flow"><span>EC2</span><i>→</i><span>SQS / DLQ</span><i>→</i><span>Lambda</span><i>→</i><span>DynamoDB</span><i>→</i><span>S3 / SNS</span></div><ul class="clean"><li>Used a global secondary index for Top 10 queries.</li><li>Designed queue-based buffering and dead-letter handling for failed messages.</li><li>Used CloudWatch metrics to track processing and failures.</li></ul></article>
+  </div>
+  <div class="architecture">
+   <div class="kicker">Interactive service map</div><h3>Explore the event flow</h3><p>Choose a component below to view its responsibility in the sample architecture.</p>
+   <div class="arch-nodes">
+    <button class="arch-node active" data-detail="Amazon EC2 hosts the sample web application and provides the entry point for user requests."><span class="emoji">🖥️</span><b>Amazon EC2</b></button>
+    <button class="arch-node" data-detail="AWS Lambda runs event-driven business logic without requiring server management."><span class="emoji">⚡</span><b>AWS Lambda</b></button>
+    <button class="arch-node" data-detail="Amazon DynamoDB stores low-latency key-value data such as scores, menus, or session state."><span class="emoji">🗃️</span><b>DynamoDB</b></button>
+    <button class="arch-node" data-detail="Amazon SQS buffers messages and decouples services; a dead-letter queue can isolate repeatedly failing messages."><span class="emoji">📨</span><b>SQS / DLQ</b></button>
+    <button class="arch-node" data-detail="Amazon S3 archives objects and static assets; Amazon SNS can fan out notifications to subscribers."><span class="emoji">☁️</span><b>S3 / SNS</b></button>
+   </div>
+   <div class="arch-detail" id="archDetail" aria-live="polite">Amazon EC2 hosts the sample web application and provides the entry point for user requests.</div>
+  </div>
+ </div></section>
+
+ <section id="journey"><div class="wrap reveal">
+  <div class="section-head"><div><div class="kicker">Continuous development</div><h2>Learning journey</h2></div><p>Building on enterprise operations experience while extending cloud and automation skills.</p></div>
+  <div class="journey">
+   <article class="card"><div class="step">01</div><h3>Enterprise infrastructure</h3><p>12+ years of Windows Server administration, Active Directory, VMware, Hyper-V, patching, backup/DR, and production support.</p><div class="tags"><span class="tag">Enterprise Ops</span><span class="tag">Availability</span></div></article>
+   <article class="card"><div class="step">02</div><h3>Cloud foundations</h3><p>Applying infrastructure knowledge to Azure and AWS compute, networking, identity, security, monitoring, and cloud operations.</p><div class="tags"><span class="tag">Azure</span><span class="tag">AWS</span></div></article>
+   <article class="card"><div class="step">03</div><h3>Automation mindset</h3><p>Continuing to develop practical scripting, Git workflows, CI/CD concepts, Linux fundamentals, and infrastructure-as-code knowledge.</p><div class="tags"><span class="tag">PowerShell</span><span class="tag">Git</span><span class="tag">DevOps learning</span></div></article>
+  </div>
+  <div class="grid" style="margin-top:18px">
+   <article class="card"><div class="card-icon">🎓</div><h3>Certifications & training</h3><ul class="clean"><li>Microsoft Azure AZ-104 — Administrator Associate</li><li>Microsoft Azure AZ-900 — Fundamentals</li><li>Microsoft SC-900 — Security, Compliance & Identity Fundamentals</li><li>ITIL Foundation (Simplilearn)</li><li>MCSE course (Udemy)</li><li>AWS Administrator course (Udemy)</li><li>AWS & DevOps Administrator training — in progress</li></ul></article>
+   <article class="card"><div class="card-icon">📘</div><h3>Education & recognition</h3><ul class="clean"><li>BCA, Alagappa University (Distance), 2021–2024</li><li>Diploma in Computer Engineering, Kumaran Polytechnic College, 2011–2014</li><li>IT Best Performer Award, TVS Credit Services</li><li>Best Team Award, Precision Informatics (99.5% TAT)</li><li>Best Performer Award at Fujitsu, five times</li></ul></article>
+   <article class="card"><div class="card-icon">🤝</div><h3>How I work</h3><ul class="clean"><li>Structured incident troubleshooting and RCA</li><li>Change control and stakeholder communication</li><li>Team collaboration and knowledge sharing</li><li>Security, documentation, and SLA focus</li></ul></article>
+  </div>
+ </div></section>
+
+ <section id="contact"><div class="wrap reveal">
+  <div class="section-head"><div><div class="kicker">Let's connect</div><h2>Contact me</h2></div><p>Open to relevant infrastructure, Windows Server, Azure, cloud operations, and technical lead opportunities.</p></div>
+  <div class="contact-grid">
+   <div class="contact-panel"><h3>Professional touchpoints</h3><p class="sub">Reach out for recruiter discussions, technical conversations, or suitable opportunities.</p>
+    <div class="contact-list">
+     <a class="contact-item" href="mailto:harigaran.a@outlook.com"><span>✉</span><span>harigaran.a@outlook.com</span></a>
+     <a class="contact-item" href="tel:+918220527837"><span>☎</span><span>+91 82205 27837</span></a>
+     <a class="contact-item" href="https://www.linkedin.com/in/harigaran-a818569151" target="_blank" rel="noopener"><span>in</span><span>LinkedIn profile ↗</span></a>
+     <div class="contact-item"><span>⌖</span><span>Chennai, Tamil Nadu, India</span></div>
+    </div>
+   </div>
+   <div class="contact-panel"><h3>Send a message</h3><p class="sub">This opens your email app with the message prefilled.</p>
+    <form id="contactForm">
+     <label>Your name<input id="senderName" required placeholder="Your name"></label>
+     <label>Work email<input id="senderEmail" type="email" required placeholder="you@company.com"></label>
+     <label>Topic<select id="senderTopic"><option>Infrastructure opportunity</option><option>Azure / Cloud role</option><option>Technical discussion</option><option>Other</option></select></label>
+     <label>Message<textarea id="senderMessage" required placeholder="Write a short message..."></textarea></label>
+     <button class="btn primary" type="submit">Create email ↗</button>
+    </form>
+   </div>
+  </div>
+ </div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> Harigaran A · Built with HTML, CSS & JavaScript.</span><span>Enterprise infrastructure · Cloud operations · Continuous learning</span></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+const observer = new IntersectionObserver(entries => {
+ entries.forEach(entry => { if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);} });
+},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.querySelectorAll('.arch-node').forEach(node => node.addEventListener('click', () => {
+ document.querySelectorAll('.arch-node').forEach(n => n.classList.remove('active'));
+ node.classList.add('active');
+ document.getElementById('archDetail').textContent = node.dataset.detail;
+}));
+document.getElementById('contactForm').addEventListener('submit', e => {
+ e.preventDefault();
+ const name = document.getElementById('senderName').value.trim();
+ const email = document.getElementById('senderEmail').value.trim();
+ const topic = document.getElementById('senderTopic').value;
+ const message = document.getElementById('senderMessage').value.trim();
+ const subject = encodeURIComponent(topic + ' — Portfolio enquiry from ' + name);
+ const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+ window.location.href = 'mailto:harigaran.a@outlook.com?subject=' + subject + '&body=' + body;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harigaran A | Azure, Microsoft 365 &amp; Windows Server Lead</title>
+<meta name="description" content="Portfolio of Harigaran A: 12+ years in Windows Server, Azure, Microsoft 365 and infrastructure operations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#F2F5F7;--card:#fff;--ink:#14232E;--muted:#51636F;--line:#D3DCE2;--ok:#0B7A5E;--ok-soft:#DDF1EA;--warn:#B7791F;
+    --head:"Bricolage Grotesque","Trebuchet MS",sans-serif;--body:"Public Sans","Segoe UI",Arial,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.65;font-size:17px}
+  a{color:var(--ok)}
+  a:focus-visible{outline:3px solid var(--warn);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+  header.top{border-bottom:1px solid var(--line);background:var(--card)}
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px;gap:16px;flex-wrap:wrap}
+  .brand{font-family:var(--head);font-weight:700;font-size:20px;text-decoration:none;color:var(--ink)}
+  nav{display:flex;gap:20px;flex-wrap:wrap}
+  nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:15px}
+  nav a:hover{color:var(--ink)}
+  .hero{padding:72px 0 56px}
+  .status{display:inline-flex;align-items:center;gap:10px;background:var(--ok-soft);color:var(--ok);font-weight:600;font-size:14px;padding:7px 14px;border-radius:999px}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--ok);animation:pulse 2s ease-out infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(11,122,94,.55)}100%{box-shadow:0 0 0 12px rgba(11,122,94,0)}}
+  .hero h1{font-family:var(--head);font-weight:700;font-size:clamp(38px,6.5vw,68px);line-height:1.06;margin:24px 0 18px;letter-spacing:-.02em;max-width:17ch}
+  .hero .role{font-weight:600;margin-bottom:12px}
+  .hero p.lead{font-size:19px;color:var(--muted);max-width:60ch}
+  .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-block;padding:13px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+  .btn.primary{background:var(--ink);color:#fff}
+  .btn.primary:hover{background:#26404f}
+  .btn.ghost{color:var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:#fff}
+  section{padding:54px 0;border-top:1px solid var(--line)}
+  h2{font-family:var(--head);font-size:clamp(26px,4vw,36px);margin-bottom:8px;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin-bottom:26px;max-width:62ch}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .stat b{display:block;font-family:var(--head);font-size:30px}
+  .stat span{color:var(--muted);font-size:15px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+  .box h3{font-family:var(--head);font-size:19px;margin-bottom:10px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tags li{list-style:none;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:3px 10px;font-size:14px}
+  .project{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--ok);border-radius:10px;padding:24px;margin-bottom:18px}
+  .project h3{font-family:var(--head);font-size:22px;margin-bottom:6px}
+  .project p{color:var(--muted);margin-bottom:12px}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px;font-weight:600;font-size:14px}
+  .flow span{background:var(--ok-soft);color:var(--ok);padding:4px 11px;border-radius:6px}
+  .flow i{font-style:normal;color:var(--muted)}
+  ul.list{padding-left:20px}
+  ul.list li{margin-bottom:5px}
+  .timeline{border-left:3px solid var(--line);padding-left:26px;margin-left:6px}
+  .job{position:relative;margin-bottom:30px}
+  .job::before{content:"";position:absolute;left:-35px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--card);border:3px solid var(--ok)}
+  .job h3{font-family:var(--head);font-size:20px}
+  .job .co{color:var(--muted);font-weight:500}
+  .job .when{color:var(--muted);font-size:15px;margin-bottom:8px}
+  .contact-list{display:grid;gap:10px;font-size:18px}
+  footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:15px}
+  @media (prefers-reduced-motion:reduce){.dot{animation:none}html{scroll-behavior:auto}}
+  @media (max-width:560px){body{font-size:16px}.hero{padding:48px 0 40px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Harigaran A</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a>
+      <a href="#projects">Projects</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="status"><span class="dot" aria-hidden="true"></span>Open to infrastructure and operations lead roles</div>
+    <h1>I keep large Windows and Azure estates running.</h1>
+    <p class="role">Senior IT Infrastructure System Administrator (Azure &amp; Microsoft 365) | Windows Server &amp; Cloud Lead</p>
+    <p class="lead">12+ years managing hybrid environments of 1,000 to 2,000+ servers, leading teams of up to 32 engineers, and running SLA-driven 24x7 operations with clients in India and Japan.</p>
+    <div class="cta">
+      <a class="btn primary" href="#contact">Contact me</a>
+      <a class="btn ghost" href="Harigaran_A_Resume.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p class="sub">I administer Windows Server, Active Directory, Azure and Microsoft 365 for enterprise clients. I handle P1/P2/P3 incidents, patching, migrations and change management, and I lead the shift teams that cover them.</p>
+      <div class="stats">
+        <div class="stat"><b>12+ yrs</b><span>Infrastructure and server administration</span></div>
+        <div class="stat"><b>2,000+</b><span>Physical and virtual servers supported</span></div>
+        <div class="stat"><b>32</b><span>Engineers led (largest team)</span></div>
+        <div class="stat"><b>100+</b><span>Sites supported over MPLS and WAN</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <p class="sub">What I use to run production infrastructure.</p>
+      <div class="grid">
+        <div class="box"><h3>Microsoft Azure</h3><ul class="tags"><li>Azure VMs</li><li>SQL Server</li><li>Virtual Networks &amp; NSGs</li><li>Azure Backup</li><li>Site Recovery</li><li>Azure Policy</li><li>Cost Management</li><li>On-premises to Azure migration</li></ul></div>
+        <div class="box"><h3>Microsoft 365 &amp; identity</h3><ul class="tags"><li>Exchange Online</li><li>Teams</li><li>SharePoint</li><li>OneDrive</li><li>Entra ID</li><li>Conditional Access</li><li>Intune (MDM)</li></ul></div>
+        <div class="box"><h3>Windows Server</h3><ul class="tags"><li>Server 2008 to 2022</li><li>Active Directory</li><li>Group Policy</li><li>DNS / DHCP</li><li>WSUS</li><li>Failover Clustering</li><li>IIS &amp; SSL</li><li>iDRAC / RDP</li></ul></div>
+        <div class="box"><h3>Virtualization</h3><ul class="tags"><li>VMware vCenter</li><li>vMotion</li><li>P2V migration</li><li>Hyper-V</li><li>Templates &amp; snapshots</li></ul></div>
+        <div class="box"><h3>Security &amp; endpoint</h3><ul class="tags"><li>Defender for Office 365</li><li>McAfee AV, DLP</li><li>Symantec Email Gateway</li><li>FortiNAC</li><li>AirWatch</li></ul></div>
+        <div class="box"><h3>Networking</h3><ul class="tags"><li>SonicWall &amp; FortiGate VPN</li><li>Cisco switches, VLANs</li><li>MPLS / WAN</li><li>PRTG</li></ul></div>
+        <div class="box"><h3>AWS</h3><ul class="tags"><li>EC2</li><li>VPC</li><li>S3</li><li>IAM</li><li>Lambda</li><li>DynamoDB</li><li>SQS / SNS</li><li>CloudWatch</li></ul></div>
+        <div class="box"><h3>Service management &amp; leadership</h3><ul class="tags"><li>ITIL Foundation</li><li>P1/P2/P3 SLAs</li><li>Patch &amp; change management</li><li>Shift rosters</li><li>RCA</li><li>Audit &amp; ISMS</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <p class="sub">Most recent first.</p>
+      <div class="timeline">
+        <div class="job">
+          <h3>Senior Operations Technical Specialist <span class="co">| Fujitsu Consulting India</span></h3>
+          <div class="when">Jun 2023 to Present</div>
+          <ul class="list">
+            <li>Administer 1,000+ hybrid Windows Servers and Azure instances with 99%+ availability.</li>
+            <li>Lead 5 engineers across patching, change management and server operations, with 24x7 shift coverage.</li>
+            <li>Manage Azure VMs, SQL Server, networks, backup and Site Recovery, plus Entra ID, Conditional Access and Intune.</li>
+            <li>Lead Windows Server migrations to 2019/2022, including Active Directory and GPO migration.</li>
+            <li>Coordinate with Japan-based teams on escalations and daily review calls.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Wintel Administrator <span class="co">| IDC Technologies, client TCS</span></h3>
+          <div class="when">Jan 2022 to May 2023</div>
+          <ul class="list">
+            <li>Supported 2,000+ physical and virtual servers (Windows Server 2008 R2 to 2019) and handled P1/P2/P3 incidents within SLA.</li>
+            <li>Led the OS migration from Windows Server 2008 R2 to 2019 across production.</li>
+            <li>Provided L2/L3 support, RCA, DR testing and VMware operations.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Server Administrator &amp; Team Lead <span class="co">| Precision Informatics, client TVS Credit</span></h3>
+          <div class="when">Aug 2017 to Dec 2021</div>
+          <ul class="list">
+            <li>Led 32 engineers across server, network and helpdesk operations.</li>
+            <li>Migrated company email from Exchange Server to Office 365 and moved 80+ servers to Windows Server 2019.</li>
+            <li>Deployed DLP, encryption and AV for 2,500+ endpoints and supported a FortiNAC rollout.</li>
+            <li>Ran MPLS/WAN for 100+ locations and managed 5,000+ laptop and desktop assets.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>System Engineer <span class="co">| Ensure Support &amp; Service, client Mando Automotive</span></h3>
+          <div class="when">Mar 2017 to Oct 2017</div>
+          <ul class="list"><li>Built the IT infrastructure for two plants and implemented Active Directory on Windows Server 2012 R2.</li></ul>
+        </div>
+        <div class="job">
+          <h3>System Engineer <span class="co">| Donghoow Surfacetech India</span></h3>
+          <div class="when">Aug 2014 to Jul 2016</div>
+          <ul class="list"><li>Handled user support, IT vendor coordination and escalations.</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Cloud projects</h2>
+      <p class="sub">Serverless applications I built on AWS while training as an AWS and DevOps administrator.</p>
+      <article class="project">
+        <h3>Institution registration app</h3>
+        <p>A course registration form that stores title, name, phone number, course and email.</p>
+        <div class="flow" aria-label="Architecture"><span>S3 website</span><i>→</i><span>API Gateway</span><i>→</i><span>Lambda (Python)</span><i>→</i><span>DynamoDB</span></div>
+        <ul class="list"><li>Server-side validation in Lambda.</li><li>Resolved CORS, routing and S3 public-access issues using CloudWatch logs.</li></ul>
+      </article>
+      <article class="project">
+        <h3>Multiplayer gaming leaderboard and real-time analytics</h3>
+        <p>A scalable pipeline that ranks players, archives every event and alerts on new Top 10 entries.</p>
+        <div class="flow" aria-label="Architecture"><span>EC2 producer</span><i>→</i><span>SQS + DLQ</span><i>→</i><span>Lambda</span><i>→</i><span>DynamoDB</span><i>→</i><span>S3</span><i>→</i><span>SNS</span></div>
+        <ul class="list"><li>Global secondary index returns the Top 10 without scanning the table.</li><li>Partial batch failures and a dead-letter queue isolate bad messages.</li><li>Custom CloudWatch metrics track scores processed and failures.</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="credentials">
+    <div class="wrap">
+      <h2>Credentials</h2>
+      <div class="grid">
+        <div class="box"><h3>Certifications</h3><ul class="list"><li>Microsoft Azure AZ-104, Administrator Associate</li><li>Microsoft Azure AZ-900, Fundamentals</li><li>Microsoft SC-900, Security, Compliance &amp; Identity Fundamentals</li><li>ITIL Foundation (Simplilearn)</li><li>MCSE course (Udemy)</li><li>AWS Administrator course (Udemy)</li><li>AWS and DevOps Administrator training, in progress</li></ul></div>
+        <div class="box"><h3>Education</h3><ul class="list"><li>BCA, Alagappa University (Distance), 2021 to 2024</li><li>Diploma in Computer Engineering, Kumaran Polytechnic College, 2011 to 2014</li></ul></div>
+        <div class="box"><h3>Awards</h3><ul class="list"><li>IT Best Performer Award, TVS Credit Services</li><li>Best Team Award, Precision Informatics (99.5% TAT)</li><li>Best Performer Award, 5 times, Fujitsu</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="sub">Hiring for an infrastructure, cloud or operations lead role? Get in touch.</p>
+      <div class="contact-list">
+        <div>Email: <a href="mailto:harigaran.a@outlook.com">harigaran.a@outlook.com</a></div>
+        <div>Phone: <a href="tel:+918220527837">+91 82205 27837</a></div>
+        <div>LinkedIn: <a href="https://www.linkedin.com/in/harigaran-a818569151" target="_blank" rel="noopener">linkedin.com/in/harigaran-a818569151</a></div>
+        <div>Location: Chennai, Tamil Nadu, India</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">&copy; <span id="year">2026</span> Harigaran A. Hosted on Amazon S3.</div></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
